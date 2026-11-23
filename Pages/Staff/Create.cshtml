@@ -4,6 +4,9 @@
     ViewData["Title"] = "Add New Staff Member";
 }
 
+<input asp-for="Staff.Email" type="email" class="form-control" />
+<span asp-validation-for="Staff.Email" class="validation-message"></span>
+
 <div class="page-hero hero-blue">
     <h1>Add New Staff Member</h1>
     <p class="lead">Enter employee details to register a new staff record in the SQLite database.</p>
