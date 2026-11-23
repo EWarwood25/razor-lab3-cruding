@@ -7,6 +7,11 @@
 <h1>Staff Directory</h1>
 <p>Total Active Employees: @Model.ActiveCount</p>
 
+    <!-- Add New Staff Button -->
+    <div class="action-bar">
+        <a asp-page="/Staff/Create" class="btn btn-primary">+ Add New Staff Member</a>
+    </div>
+
     <!-- Search Form using HTTP GET -->
     <form method="get" class="search-form">
         <div class="search-group">
