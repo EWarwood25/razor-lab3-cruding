@@ -50,7 +50,8 @@
                         <td>@member.StaffId</td>
                         <td>@member.FirstName @member.LastName</td>
                         <td>
-                            <a asp-page="/Staff/Details" asp-route-id="@member.StaffId">Details</a>
+                            <a asp-page="/Staff/Details" asp-route-id="@member.StaffId" class="btn btn-outline btn-sm">Details</a>
+                            <a asp-page="/Staff/Edit" asp-route-id="@member.StaffId" class="btn btn-outline btn-sm">Edit</a>
                         </td>
                     </tr>
                 }
